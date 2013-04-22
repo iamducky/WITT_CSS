@@ -1,5 +1,7 @@
 /*============================ Subreddit specific CSS ============================*/
 
+http://f.thumbs.redditmedia.com/tAhPFHFWJGCSoL3G.png | http://i.imgur.com/v0YpEbB.png
+
 /*=== Custom stylesheet ===*/
 .stylesheet-customize-container { width: 100%; }
 #subreddit_stylesheet { display: block; overflow: hidden; }
