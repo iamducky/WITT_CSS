@@ -1,0 +1,970 @@
+.thing .title,.thing .title.loggedin{color:blue}.thing 
+.title:visited,.thing .title.loggedin:visited,.thing 
+.title.loggedin.click,.thing .title.click{color:gray!important}
+
+/* Common Styles for buttons and such */
+
+/* Three colour styles, light medium and dark */
+.side table tbody tr:hover td,
+.side table tbody tr td:first-child,
+.searchpane,
+div.spacer > form#search input[name="q"],
+#searchexpando,
+div.spacer > form#search input:focus,
+.linkinfo,
+.morelink,
+.sidebox.create .spacer,
+.footer div.col a,
+.titlebox .usertext-body .md ol,
+.submit-page .content .spacer:first-child::before,
+.footer div.col a,
+#header-bottom-right,
+#header-bottom-left .tabmenu li a,
+.stylesheet-customize-container::after,
+div.buttons::after,
+.last-clicked,
+.style-light
+{
+    background-color: #E1E6EE !important;
+    border-color: #CAD1DE !important;
+    border-width: 1px;
+    border-style: solid !important;
+    border-radius: 3px;
+    background-image: none;
+}
+
+.side table tbody tr td:first-child:hover,
+.side table tbody tr:hover td:first-child, 
+.morelink:hover,
+.sidebox.submit.spacer,
+.thing.title.loggedin.click,
+.thing.title.click,
+.footer div.col a:hover,
+#userbarToggle,
+#header-bottom-left .tabmenu li a:hover,
+#header-bottom-left .tabmenu li.selected a,
+.fancy-toggle-button .option.add,
+.RESshortcut.RESshortcutside,
+.REStoggle.RESDashboardToggle,
+.RESSubscriptionButton,
+.style-med
+{
+    background-color: #CAD1DE !important;
+    border-color: #99A8C7 !important;
+    border-width: 1px;
+    border-style: solid !important;
+    border-radius: 3px;
+    color: white !important;
+}
+
+.side table thead tr th:first-child,
+.linkinfo::after,
+.RESshortcut.RESshortcutside.remove,
+.fancy-toggle-button .option.remove,
+.RESDashboardToggle.remove,
+.RESSubscriptionButton.unsubscribe,
+.style-dark
+{
+    background-color: #3B5997 !important;
+    border-color: #1d4088 !important;
+    border-width: 1px;
+    border-style: solid !important;
+    border-radius: 3px;
+    color: white !important;
+}
+
+/*Anything that should be hidden*/
+.rank,
+.thumbnail.self.loggedin,
+.viewimages p.parent,
+.morelink .nub,
+.hide
+{
+    display: none !important;
+}
+/*removes the background image*/
+.fancy-toggle-button .remove,
+.fancy-toggle-button .active,
+.RESshortcut.RESshortcutside,
+.REStoggle.RESDashboardToggle,
+.remove-backround
+{
+    background-image: none !important;
+}
+
+div#RESNotifications{
+    z-index: 9999;
+}
+
+.arrow.up { 
+    background-image: url(%%facepalm-like-gray%%); 
+    background-position: -2px -2px;
+    height: 18px; width: 18px;
+}
+.arrow.upmod { 
+    background-image: url(%%facepalm-like-clicked%%); 
+    background-position: -2px -2px;
+    height: 18px; width: 18px;
+}
+
+.arrow.down { 
+    background-image: url(%%facepalm-dislike-gray%%); 
+    background-position: -2px -3px;
+    height: 18px; width: 18px;
+}
+.arrow.downmod { 
+    background-image: url(%%facepalm-dislike%%); 
+    background-position: -2px -3px; 
+    height: 18px; width: 18px;
+}
+
+div.spacer > form#search {
+    margin-top: 150px;
+    }
+
+body.res div.spacer > form#search {
+    margin-top: 169px;
+    }
+
+
+div.spacer > form#search input[name="q"] {
+    background-image: url(%%facepalm-search%%);
+    background-repeat:no-repeat;
+    Background-position: 1.5% 60%;
+    padding: 0px 0px 0px 20px !important;
+    width: 278px;
+    height: 28px;
+    }
+
+div.spacer > form#search input:focus, .fancy-toggle-button:focus, .fancy-toggle-button > *:focus{  
+    outline-style: none;
+}
+.fancy-toggle-button{
+
+}
+/* the first line if the sidebar should start with "1. " it becomes the announcement bubble*/
+
+a[href$="/important"] {
+    color: red !important
+    }
+
+.users-online::before {
+    background-image: url(%%facepalm-online%%) !important;
+    background-position: 0px 2px !important
+    }
+
+.titlebox .usertext-body .md ol {
+    position: absolute;
+    display: block;
+    overflow: auto;
+    margin: 0;
+    z-index: 999;
+    padding: 8px 10px 8px 30px;
+    background: url(%%facepalm-like%%) 5px 6px no-repeat;
+    border: 1px solid #99A8C7 !important;
+    font-size: 11px;
+    color: #333;
+    top: 33px;
+    left: 400px;
+    width: 250px;
+    list-style: none;
+    }
+.titlebox .usertext-body .md ol:hover { background-color: #CAD1DE }
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 0;
+    background: #FFF fixed center top no-repeat;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    }
+div.content {
+    background-color: #FFF;
+    margin-right: 310px;
+    padding-bottom: 40px;
+    }
+#header {
+    height: 90px;
+    background: #3B5997 fixed top center no-repeat;
+    border-bottom: 1px solid #1d4088
+    }
+#header .img {
+    clear: both;
+    top: 0px;
+    right: 0px;
+    height: 80px
+    }
+#header .redditname {
+    position: absolute;
+    display: block;
+    top: 21px;
+    left: 62px;
+    height: 70px;
+    width: 350px;
+    background: url(%%facepalm-acepalm%%) top left no-repeat;
+font-size:0;
+    }
+#header .redditname a {
+    display: block;
+    height: 70px;
+    width: 290px;
+    opacity: 0;
+    }
+#header .redditname text{
+
+    }
+.hover pagename redditname {
+    padding-left: -40px
+    }
+div#spacer {
+    background: #666666
+    }
+div#sidebox submit {
+    background: none
+    }
+div#reddit-edit {
+    background: none
+    }
+div.side {
+    clear: right;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding: 0px 5px 5px 5px;
+    border-left: 1px solid #99A8C7;
+    }
+hr {
+    border-bottom: 3px solid #99A8C7;
+}
+#header-bottom-right {
+    height: 11px !important;
+
+    border-left: 1px solid #99A8C7 !important;
+    border-right: 1px solid #99A8C7 !important;
+    border-top: 1px solid #99A8C7 !important;
+    border-bottom: 0px !important;
+
+    border-top-left-radius: 3px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    }
+#userbarToggle {
+    border-bottom: 1px !important;
+    position: absolute !important;
+    top: -1px !important;
+    height: 11px !important;
+    border-bottom-left-radius: 3px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+#header-bottom-left .tabmenu {
+    float: right;
+    top: 79px;
+    right: 2px;
+    height: 0px;
+    position: relative;
+    }
+#header-bottom-left .tabmenu li {
+    /*top: 35px*/
+    width: 299.5px;
+    float: left;
+    clear: both;
+    position: relative;
+}
+
+.search-page #header-bottom-left .tabmenu li {
+    display:none;
+}
+
+#header-bottom-left .tabmenu li:first-child a {
+    border-top-left-radius: 3px !important;
+    border-top-right-radius: 3px!important;
+    border-width: 1px !important;
+}
+#header-bottom-left .tabmenu li:last-child a {
+    border-bottom-left-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+}
+
+.tabmenu-borders,
+#header-bottom-left .tabmenu li a,
+#header-bottom-left .tabmenu li a:hover,
+#header-bottom-left .tabmenu li.selected a
+{
+    border-radius: 0px;
+    border-top: 0px;
+}
+
+#header-bottom-left .tabmenu li a {
+    display: block;    
+    padding: 0px 0px 0px 30px !important;
+    font-weight: normal;
+    font-size: 1.2em;
+    }
+#header-bottom-left .tabmenu li a:hover {
+    display: block;
+    }
+#header-bottom-left .tabmenu li.selected a {
+    border: 1px solid #99A8C7;
+    }
+/*hide other discussions tab. nobody will even notice that it's gone*/
+#header-bottom-left .tabmenu li a[href*="/duplicates/"]
+{
+    display: none;
+}
+
+.titlebox .redditname.hover {
+    display: none;
+}
+
+.titlebox .word {
+    display: none
+    }
+.titlebox .subscribers .number:after {
+    content: " facepalmed"
+    }
+.titlebox .users-online .number:after {
+    content: " red foreheads"
+    }
+.titlebox .bottom  {
+    border-top: 1px solid #CAD1DE;
+    }
+.entry .buttons li a {
+    color: #6D84B4;
+    font-weight: normal;
+    }
+.entry a.author {
+    /*font-weight: bold;*/
+    }
+.entry {
+    padding: 3px 3px 3px 3px;
+    }
+.keyHighlight {
+    outline: 0 !important;
+    background-color: transparent !important;
+    /*border-left: 2px solid #A8B2CE;*/
+    padding: 3px 3px 3px 3px;
+    }
+.titlebox .spacer
+
+.titlebox h1 a {
+    color: #1f4189;
+    }
+
+.titlebox h1 a:hover {
+    text-decoration: none
+    }
+
+.thing .title.loggedin {
+    font: 13px Tahoma;
+    cursor: pointer;
+    color: #3B5997;  
+    font-weight: normal
+    }
+
+.tagline {
+    color: #888;
+    font-size: x-small
+    }
+.domain {
+    display: none;
+    }
+#REScommentNavToggle {
+    float: none !important;
+}
+.commentarea>.usertext {
+    margin: 0 0 0 0 !important;
+}
+.commentarea .menuarea {
+    margin-bottom: 0;
+}
+.usertext-edit {
+    margin-top: 0;
+}
+.linkinfo {
+    padding: 5px;
+    font-family: "lucida grande", sans-serif;
+    font-size: larger;
+}
+.linkinfo .upvotes {
+    font-size: 100%
+}
+.linkinfo .downvotes {
+    font-size: 100%
+}
+.link {
+    margin-left: 15px;
+    background: #FFF
+}
+.report-button > span.option.error:after {
+    content: "  Please send a modmail with your report."
+}
+
+.comment.spam>.child, .comment .child, .comment .showreplies 
+{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.usertext-edit {
+    padding-left: 15px;
+}
+
+/*with thanks to radd_it*/
+div.comment div.child,
+div.comment div.child div.child div.child div.child,
+div.comment div.child div.child div.child div.child div.child,
+div.comment div.child div.child div.child div.child div.child div.child div.child,
+div.comment div.child div.child div.child div.child div.child div.child div.child div.child div.child div.child
+{
+    border-left: #3B5897 3px solid !important;
+}
+div.comment div.child div.child,
+div.comment div.child div.child div.child div.child div.child,
+div.comment div.child div.child div.child div.child div.child div.child div.child div.child,
+div.comment div.child div.child div.child div.child div.child div.child div.child div.child,
+div.comment div.child div.child div.child div.child div.child div.child div.child div.child div.child div.child div.child
+{
+    border-left: #7488B4 3px solid !important;
+}
+div.comment div.child div.child div.child,
+div.comment div.child div.child div.child div.child div.child div.child,
+div.comment div.child div.child div.child div.child div.child div.child div.child div.child div.child,
+div.comment div.child div.child div.child div.child div.child div.child div.child div.child div.child div.child div.child div.child
+{
+     border-left: #CAD1DE 3px solid !important;
+}
+
+/* Sidebar */
+.morelink {
+    background-image: none;
+    font-weight: normal;
+
+    }
+.morelink:hover {
+    background-image: none;
+    }
+.morelink a {
+
+    }
+.sidebox.submit .spacer {
+    background-position: top left;
+    padding-top: 10px;
+    }
+.sidebox.create .spacer {
+    background-position: top left;
+    padding-top: 10px;
+    }
+.sidebox.create .spacer .subtitle {
+    color: black;
+}
+
+.sidebox .subtitle { color: lightGrey }
+
+.sidebox .spacer a { 
+    top: 5px;
+    left: 5px;
+}
+
+
+
+/* SUBMIT PAGE*/
+
+ul.tabmenu.formtab {
+    /*display: block;
+    padding-left: 10px;
+    font-size: larger;
+    position: relative;*/
+    }
+
+#link-desc:after {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20pt;
+    color: red;
+    content: ""
+    }
+.submit-page .content .spacer:first-child::after{
+    font-weight: bold;
+    color: #2B2B2B;
+    font-size: 100%;
+    display: block;
+    margin-top: 5px;
+    border: 1px solid #ED3939;
+    background-color: #FFCFCF;
+    padding: 10px;
+    min-height: 15px;
+    content: "stuff";
+    }
+
+.RESDialogSmall.livePreview { margin: 15px 15px 15px 0px; }
+
+.footer, .footer-parent {
+    margin: 0;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    background: #FFF
+    }
+.footer-parent {
+    margin: 0
+    }
+.footer div.col {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 176px;
+    border: 0;
+    height: auto;
+    font-family: Arial, sans-serif
+    }
+.footer div.col .title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    color: #fff;
+    background: #3B5997
+    }
+.footer div.col a {
+    display: block;
+    margin: 5px;
+    padding: 3px 4px 3px 7px;
+    color: #000;
+    }
+.footer div.col a:hover {
+    color: #000;
+    text-decoration: none
+    }
+.footer p.bottommenu {
+    clear: left;
+    color: #FFF;
+    padding: 6px;
+    font-weight: bold
+    }
+.footer p.bottommenu a {
+    font-weight: bold;
+    color: #FFF
+    }
+
+/*stylesheet page*/
+.stylesheet-customize-container::after{
+    font-weight: normal;
+    font-size: 1.2em;
+    display: block;
+    min-height: 15px;
+    height: 50px;
+    width: 287.5px;
+    padding: 5px 5px 5px 5px;
+    content: "put flair intro here";
+    position: absolute;
+    right: 5.5px;
+    top: 102px;
+    }
+div.buttons::after{
+    font-weight: normal;
+    font-size: 1.2em;
+    display: block;
+    min-height: 15px;
+    height: 45px;
+    width: 287.5px;
+    padding: 5px 5px 5px 5px;
+    content: "put flair tut here";
+    position: absolute;
+    right: 5.5px;
+    top: 174px;
+    }
+
+body.res div.buttons::after{
+    font-weight: normal;
+    font-size: 1.2em;
+    display: block;
+    min-height: 15px;
+    height: 64px;
+    width: 287.5px;
+    padding: 5px 5px 5px 5px;
+    content: "put flair tut here";
+    position: absolute;
+    right: 5.5px;
+    top: 174px;
+    }
+
+/*comments, no RES*/
+.linkinfo::after{
+    font-weight: normal;
+    font-size: 1.2em;
+    display: block;
+    min-height: 15px;
+    height: 69px;
+    width: 287.5px;
+    padding: 5px 5px 5px 5px;
+    content: "New Sidebar! Message the mods with any questions or recommendations.";
+    position: absolute;
+    right: 5.5px;
+    top: 150px;
+    }
+/*comments, RES*/
+body.res .linkinfo::after{
+    font-weight: normal;
+    font-size: 1.2em;
+    display: block;
+    min-height: 15px;
+    height: 69px;
+    width: 287.5px;
+    padding: 5px 5px 5px 5px;
+    content: "New Sidebar! Message the mods with any questions or recommendations.";
+    position: absolute;
+    right: 5.5px;
+    top: 169px;
+    }
+.submit-page .content .spacer:first-child::before {
+    font-weight: normal;
+    font-size: 1.2em;
+    display: block;
+    min-height: 15px;
+    height: 125px;
+    width: 297.5px;
+    background: url(%%facepalm-gates%%);
+    content: "";
+    position: absolute;
+    right: 5.5px;
+    top: 102px;
+    }
+span.userattrs > a.recent-trophywinner { 
+    display: inline; 
+    position: relative; 
+    background: url(%%facepalm-cake%%) no-repeat;
+    background-position: 0px 0px; 
+    padding: 10px 5px 7px 11px; 
+    content: ""; 
+    height:2px; 
+    width:2px;
+    z-index: 9999 !important;
+} 
+a.recent-trophywinner > img { 
+    display:none; 
+}
+
+/*sidebar table*/
+.side table {
+    display: block;
+    margin-left: 0;
+}
+.side table thead tr th{
+    display: none;
+}
+
+.side table thead tr th:first-child{
+    display: block;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.side table tbody tr {
+    display: block;
+    min-width: 300px;
+    margin-bottom: 6px;
+}
+.side table tbody tr td {
+    display: block;
+    border-bottom-width: 0px;
+    border-radius: 0px;
+}
+.side table tbody tr:hover td {
+    display: block;
+    border-bottom-width: 0px;
+    border-radius: 0px;
+}
+
+.side table tbody tr td {
+    display: none;
+    font-weight: normal;
+    font-size: 1.2em;
+    min-height: 19px;
+    padding: 0px 0px 0px 10px;
+}
+.side table tbody tr:hover td {
+    display: block;
+}
+
+.side table tbody tr td:first-child {
+    display: block;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+    border-bottom-width: 1px;
+    border-radius: 3px;
+    margin-bottom: 6px;
+    padding: 5px 5px 10px;
+}
+
+.side table tbody tr:hover td:nth-of-type(2) {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+}
+
+
+.side table tbody tr:nth-of-type(1):hover td:nth-of-type(8)  {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-width: 1px;
+}
+.side table tbody tr:nth-of-type(2):hover td:nth-of-type(6)  {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-width: 1px;
+}
+.side table tbody tr:nth-of-type(3):hover td:nth-of-type(4)  {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-width: 1px;
+}
+.side table tbody tr:nth-of-type(4):hover td:nth-of-type(3)  {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-width: 1px;
+}
+.side table tbody tr:nth-of-type(5):hover td:nth-of-type(7)  {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-width: 1px;
+}
+.side table tbody tr:nth-of-type(6):hover td:nth-of-type(4)  {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-width: 1px;
+}
+.side table tbody tr:nth-of-type(7):hover td:nth-of-type(3)  {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-width: 1px;
+}
+.side table tbody tr:nth-of-type(8):hover td:nth-of-type(4)  {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-width: 1px;
+}
+.side table tbody tr:nth-of-type(9):hover td:nth-of-type(4)  {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-width: 1px;
+}
+.side table tbody tr:nth-of-type(10):hover td:nth-of-type(4)  {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-width: 1px;
+}
+
+.side table:nth-of-type(2) tbody tr:nth-of-type(2):hover td:nth-of-type(12)  {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-width: 1px;
+}
+
+.side table tbody tr:hover td:empty {
+    display: none;
+}
+
+.flair-online{
+   width: 20px;
+   height: 20px;
+   background-image: url(%%facepalm-online%%);
+   display: inline-block;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: 0px -0px;
+   vertical-align: -30%;
+   margin-right: -2px;
+   border: none
+   }
+
+.flair-dislike{
+   width: 20px;
+   height: 20px;
+   background-image: url(%%facepalm-dislike%%);
+   display: inline-block;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: 0px -0px;
+   vertical-align: -30%;
+   margin-right: -2px;
+   border: none
+   }
+
+.flair-Rarity{
+   width: 40px;
+   height: 40px;
+   background-image: url(%%Rarity%%);
+   display: inline-block;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: 0px -0px;
+   vertical-align: -30%;
+   margin-right: -2px;
+   border: none
+   }
+
+.flair-ducky{
+   width: 40px;
+   height: 40px;
+   background-image: url(%%Psyduck%%);
+   display: inline-block;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: 0px -0px;
+   vertical-align: -30%;
+   margin-right: -2px;
+   border: none
+   }
+
+.flair-OVER8000{
+   width: 40px;
+   height: 40px;
+   background-image: url(%%over8000%%);
+   display: inline-block;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: 0px -0px;
+   vertical-align: -30%;
+   margin-right: -2px;
+   border: none
+   }
+
+.flair-Nazi{
+   width: 40px;
+   height: 30px;
+   background-image: url(%%Swastika%%);
+   display: inline-block;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: 0px -0px;
+   vertical-align: -30%;
+   margin-right: -2px;
+   border: none
+   }
+
+.flair-CPacman{
+   width: 40px;
+   height: 40px;
+   background-image: url(%%CPacman%%);
+   display: inline-block;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: 0px -0px;
+   vertical-align: -30%;
+   margin-right: -2px;
+   border: none
+   }
+
+.flair-Fury{
+   width: 40px;
+   height: 30px;
+   background-image: url(%%MGS3Fury%%);
+   display: inline-block;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: 0px -0px;
+   vertical-align: -30%;
+   margin-right: -2px;
+   border: none
+   }
+
+.flair-Tentacruel {
+   width: 40px;
+   height: 30px;
+   background-image: url(%%Tentacruel%%);
+   display: inline-block;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: 0px -0px;
+   vertical-align: -30%;
+   margin-right: -2px;
+   border: none
+   }
+
+.flair-Like{
+   width: 20px;
+   height: 20px;
+   background-image: url(%%facepalm-like%%);
+   display: inline-block;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: 0px -0px;
+   vertical-align: -30%;
+   margin-right: -2px;
+   border: none
+   }
+
+.flair-Pinkie {
+   width: 40px;
+   height: 40px;
+   background-image: url(%%Pinkie%%);
+   display: inline-block;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: 0px -0px;
+   vertical-align: -30%;
+   margin-right: -2px;
+   border: none
+   }
+
+.flair-Butterduck {
+   width: 40px;
+   height: 40px;
+   background-image: url(%%Butter%%);
+   display: inline-block;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: 0px -0px;
+   vertical-align: -30%;
+   margin-right: -2px;
+   border: none
+   }
+
+.flair-Applejack {
+   width: 40px;
+   height: 40px;
+   background-image: url(%%Applejack%%);
+   display: inline-block;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: 0px -0px;
+   vertical-align: -30%;
+   margin-right: -2px;
+   border: none
+   }
+
+.flair-Fluttershy {
+   width: 40px;
+   height: 40px;
+   background-image: url(%%Fluttershy%%);
+   display: inline-block;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: 0px -0px;
+   vertical-align: -30%;
+   margin-right: -2px;
+   border: none
+   }
+
+.flair-Rainbow {
+   width: 40px;
+   height: 40px;
+   background-image: url(%%Rainbow%%);
+   display: inline-block;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: 0px -0px;
+   vertical-align: -30%;
+   margin-right: -2px;
+   border: none
+   }
+
+a[href="/like"] {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(%%facepalm-like%%)
+    }
